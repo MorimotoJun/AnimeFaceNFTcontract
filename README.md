@@ -4,11 +4,9 @@
 This repository is created to test NFT contracts and test Opensea's UX
 
 ## Expected Use Case
-Metadata    : Stored in IPFS
-
-Minter      : Only the owner of this contract
-
-MarketPlace : Opensea
+* Metadata    : Stored in IPFS
+* Minter      : Only the owner of this contract
+* MarketPlace : Opensea
 
 ## Contracts
 * Based on ERC721 contract code from Openzeppelin
