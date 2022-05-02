@@ -19,7 +19,18 @@ This repository is created to test NFT contracts and test Opensea's UX
 ```
 $ npm install
 $ npx hardhat
+$ touch .env
+```
+* apply to [Polygonscan API](https://polygonscan.com/register)
+* run above codes
+* edit `.env` file as below
+```
+PRIVATE_KEY={ Secret Key of Your Wallet on Mumbai network }
+POLYGONSCAN_API_KEY={ API Key of Your Polygonscan }
 ```
 
 ## Test
 `npx hardhat test`
+
+## Deploy
+`npx hardhat run --network mumbai scripts/deploy_animefacenft.js`
