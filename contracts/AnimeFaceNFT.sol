@@ -53,7 +53,6 @@ contract AnimeFaceNFT is ERC721URIStorage, Ownable {
         uint256 newItemId = _tokenIds.current();
         _mint(recipient, newItemId);
         _setTokenURI(newItemId, ipfsHash);
-        // _setTokenURI(newItemId, string(abi.encodePacked("https://gateway.pinata.cloud/ipfs/", ipfsHash)));
 
         return newItemId;
     }
