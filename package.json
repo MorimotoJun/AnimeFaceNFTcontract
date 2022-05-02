@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/MorimotoJun/AnimeFaceNFTcontract#readme",
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-truffle5": "^2.0.5",
     "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts": "^4.6.0",
+    "dotenv": "^16.0.0",
     "hardhat": "^2.9.3",
     "web3": "^1.7.3"
   }
