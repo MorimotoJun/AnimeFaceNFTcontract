@@ -30,6 +30,9 @@ PRIVATE_KEY={ Secret Key of Your Wallet on Mumbai network }
 POLYGONSCAN_API_KEY={ API Key of Your Polygonscan }
 ```
 
+## Customize
+Line 13 of `./contracts/AnimeFaceNFT.sol` file is the name of the NFT collection that your contract issues. Please rewrite "AnimeFaceNFT" or "AFN" as you like.
+
 ## Test
 `npx hardhat test`
 
