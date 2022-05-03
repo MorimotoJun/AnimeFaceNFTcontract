@@ -109,32 +109,7 @@ function App() {
         {
           from: accounts[0],
           to: CONTRACT_ADDRESS,
-          data: {
-            "inputs": [
-              {
-                "internalType": "address",
-                "name": "recipient",
-                "type": "address"
-              },
-              {
-                "internalType": "string",
-                "name": "ipfsHash",
-                "type": "string"
-              }
-            ],
-            "name": "mintNFT",
-            "outputs": [
-              {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-              }
-            ],
-            "stateMutability": "nonpayable",
-            "type": "function"
-          },
-          recipient,
-          ipfsHash: hash,
+          data: ""
         }
       ]
     })
@@ -150,21 +125,19 @@ function App() {
       <p>{ chainId }</p>
       <p>{ accounts[0] }</p>
 
-      <form onSubmit={ submitMintTX }>
-        <div>
-          <label>
-            Recipient:
-            <input type="text" name="recipient" value={ recipient } onChange={ handleRecipient } />
-          </label>
-        </div>
-        <div>
-          <label>
-            IPFS Hash:
-            <input type="text" name="hash" value={ hash } onChange={ handleHash } />
-          </label>
-        </div>
-        <input type="submit" value="Submit" />
-      </form>
+      <div>
+        <label>
+          Recipient:
+          <input type="text" name="recipient" value={ recipient } onChange={ handleRecipient } />
+        </label>
+      </div>
+      <div>
+        <label>
+          IPFS Hash:
+          <input type="text" name="hash" value={ hash } onChange={ handleHash } />
+        </label>
+      </div>
+      <button onClick={ submitMintTX }>Submit</button>
     </div>
   );
 }
