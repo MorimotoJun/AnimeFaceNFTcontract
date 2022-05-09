@@ -20,14 +20,15 @@ This repository is created to test NFT contracts and test Opensea's UX
 $ npm install
 $ npx hardhat
 ```
-1. apply to [Polygonscan API](https://polygonscan.com/register)
+1. apply to [Polygonscan API](https://polygonscan.com/register) and [Etherscan API](https://etherscan.io/apis)
 2. install [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ja)
 3. fill token to your wallet from [faucet](https://mumbaifaucet.com/) or CEX
-4. run above codes
-5. create `.env` file as below
+4. register to [Infura](https://infura.io/) and "create project" to get "project id" => fill { INFURA_PROJECT_ID } at ./hardhat.config.js
+5. run above codes
+6. create `.env` file as below
 ```
-PRIVATE_KEY={ Secret Key of Your Wallet on Mumbai network }
-POLYGONSCAN_API_KEY={ API Key of Your Polygonscan }
+PRIVATE_KEY={ Secret Key of Your Metamask Wallet }
+ETHERSCAN_API_KEYS={"hardhat":"", "mumbai":"{ Polygonscan API Key }", "rinkeby": "{ Etherscan API Key }"}
 ```
 
 ## Customize
@@ -63,7 +64,18 @@ $ npx hardhat verify --network { Network Name } { Contract Address }
 $ cd mintApp
 $ npm install
 ```
-* open `mintApp/src/chain.json` and fill your contract address
+* open `mintApp/src/chain.json` and fill the informations
+```chain.json
+{
+    "CHAIN_NAME": "{ CHAIN_NAME }",             // as you like
+    "CHAIN_ID": "{ CHAIN_ID }",                 // decimal integer (mumbai: 5, rinkeby: 4)
+    "HEX_CHAIN_ID": "{ HEX_CHAIN_ID }",         // hex integer (mumbai: 0x5, rinkeby: 0x4)
+    "TOKEN": "{ TOKEN_SYMBOL }",                // token name (mumbai: MATIC, rinkeby: ETH)
+    "RPC": "{ RPC_ENDPOINT }",                  // RPC Endpoint
+    "EXPLORER": "{ EXPLORER_URL }",             // explorer address
+    "CONTRACT_ADDRESS": "{ CONTRACT_ADDRESS }"  // contract address
+}
+```
 
 ## Start React App And Mint NFTs
 1. `npm start` to start app

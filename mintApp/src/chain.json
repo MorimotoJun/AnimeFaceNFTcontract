@@ -1,9 +1,9 @@
 {
-    "CHAIN_NAME": "Mumbai",
-    "CHAIN_ID": "80001",
-    "HEX_CHAIN_ID": "0x13881",
-    "TOKEN": "MATIC",
-    "RPC": "https://rpc-mumbai.maticvigil.com",
-    "EXPLORER": "https://polygonscan.com/",
-    "CONTRACT_ADDRESS": "{ NFT CONTRACT ADDRESS }"
+    "CHAIN_NAME": "{ CHAIN_NAME }",
+    "CHAIN_ID": "{ CHAIN_ID }",
+    "HEX_CHAIN_ID": "{ HEX_CHAIN_ID }",
+    "TOKEN": "{ TOKEN_SYMBOL }",
+    "RPC": "{ RPC_ENDPOINT }",
+    "EXPLORER": "{ EXPLORER_URL }",
+    "CONTRACT_ADDRESS": "{ CONTRACT_ADDRESS }"
 }
