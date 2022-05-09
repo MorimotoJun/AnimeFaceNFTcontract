@@ -27,8 +27,8 @@ $ npx hardhat
 5. run above codes
 6. create `.env` file as below
 ```
-PRIVATE_KEY={ Secret Key of Your Metamask Wallet }
-ETHERSCAN_API_KEYS={"hardhat":"", "mumbai":"{ Polygonscan API Key }", "rinkeby": "{ Etherscan API Key }"}
+PRIVATE_KEY={ SECRET_KEY_OF_YOUR_METAMASK_WALLET }
+ETHERSCAN_API_KEYS={"hardhat":"", "mumbai":"{ POLYGONSCAN_API_KEY }", "rinkeby": "{ ETHERSCAN_API_KEY }"}
 ```
 
 ## Customize
