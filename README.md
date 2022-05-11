@@ -86,6 +86,6 @@ $ npm install
 
 ## Integrate to [Testnet Opensea](https://testnets.opensea.io/)
 1. Access [Link](https://opensea.io/get-listed) and click "Live on a testnet"
-2. Select "Mumbai" as network
+2. Select "Mumbai" or "Rinkeby" as network
 3. Fill the contract address and click "Submit"
 4. You'll be redirected to your new collection page. Let's check NFT you've just minted!!
